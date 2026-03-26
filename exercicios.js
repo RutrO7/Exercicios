@@ -2,3 +2,8 @@
 var nome = "Artur";
 var idade = 20;
 console.log("Meu nome é", nome, "e eu tenho", idade, "anos de idade!");
+
+// Agora vai ser uma arrow function que percore os numero de 1 a 10 em loop;
+for (let i = 0; i <= 10; i++) {
+  console.log([i]);
+} // extremamente facil e eu fiz ficar dificil, melhor maneira de executar um arrow sem quebrar a cabeça;
