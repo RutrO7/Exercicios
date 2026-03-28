@@ -15,3 +15,5 @@ if (test1){
   console.log('Você não pode')
 }
 
+var test =10;
+console.log('Numero é:',test);
