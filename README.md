@@ -1,4 +1,5 @@
 "Testando o readme.md, com isso, vou explicar o que cada topico que eu estou codando faz, para que, além de poder absorver o conhecimento, eu já aprendo mais a como lidar com o readme!"
+
 # 🐳 Docker Containers - Guia Prático
 
 ## 📌 Diferença entre Imagem e Container
@@ -7,18 +8,18 @@ As imagens e os containers Docker são conceitos diferentes dentro do ecossistem
 
 ### 📦 Imagem Docker
 
-* É uma versão empacotada de uma aplicação
-* Contém código, dependências, bibliotecas e tudo necessário para rodar
-* Funciona como um **modelo (somente leitura)**
-* Pode ser criada com Dockerfile ou baixada do Docker Hub
+- É uma versão empacotada de uma aplicação
+- Contém código, dependências, bibliotecas e tudo necessário para rodar
+- Funciona como um **modelo (somente leitura)**
+- Pode ser criada com Dockerfile ou baixada do Docker Hub
 
 ---
 
 ### ▶️ Container Docker
 
-* É uma **instância em execução** de uma imagem
-* Leve, isolado e executável
-* Pode ser iniciado, parado e removido
+- É uma **instância em execução** de uma imagem
+- Leve, isolado e executável
+- Pode ser iniciado, parado e removido
 
 ---
 
@@ -100,11 +101,11 @@ docker run --name meu_wordpress -p 8080:80 -d wordpress
 
 ### Explicação:
 
-* `docker run` → executa container
-* `--name` → nome do container
-* `-p 8080:80` → mapeamento de porta
-* `-d` → modo background
-* `wordpress` → imagem utilizada
+- `docker run` → executa container
+- `--name` → nome do container
+- `-p 8080:80` → mapeamento de porta
+- `-d` → modo background
+- `wordpress` → imagem utilizada
 
 ---
 
@@ -190,18 +191,18 @@ docker rmi id-ou-nome
 
 ## 🚀 Conclusão
 
-* Docker facilita rodar aplicações em qualquer ambiente
-* Imagens são modelos
-* Containers são execuções
+- Docker facilita rodar aplicações em qualquer ambiente
+- Imagens são modelos
+- Containers são execuções
 
 ### 🧠 Comandos principais:
 
-* `pull`
-* `run`
-* `ps`
-* `stop`
-* `start`
-* `rm`
-* `rmi`
+- `pull`
+- `run`
+- `ps`
+- `stop`
+- `start`
+- `rm`
+- `rmi`
 
 ---
