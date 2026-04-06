@@ -14,7 +14,12 @@ console.log(test.idade);
 const objEmJson = {
   idade: 39,
   trabalho: "Vender Consorsio",
-  salario: 2159,
+  salario: {
+    corresaoDoSalario: (2159).toLocaleString("pt-BR", {
+      style: "currency",
+      currency: "BRL",
+    }),
+  },
 };
 
 let convert = JSON.stringify(objEmJson);
@@ -25,3 +30,25 @@ const realConvert = objEmJson.salario.toLocaleString("pt-BR", {
   currency: "BRL",
 });
 console.log(realConvert);
+
+//let numeroEmReais = objEmJson.salario.realConvert;
+//console.log(numeroEmReais);
+console.log(objEmJson.salario.corresaoDoSalario);
+
+// Real forma de fazer um objeto com decimais em R$ no padrão R$ 1.000,00;
+const salario = 2159;
+
+const objEmJsons = {
+  idade: 39,
+  trabalho: "Vender Consorcio",
+  salario: {
+    formatado: salario.toLocaleString("pt-BR", {
+      style: "currency",
+      currency: "BRL",
+    }),
+  },
+  // não podemos simplismente colocar o R$ já formatado, pq o js não aceita, creio que nenhum aceite
+  //valor: 'R$' 2.1159,00 POR ISSO USAMOS "toLocaleString"
+};
+
+console.log(objEmJsons);
