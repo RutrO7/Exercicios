@@ -40,7 +40,18 @@
   console.log(operador(28, 9, 27));
 }
 
-//Crie dois arrays de frutas e combine-os usando o operador spread.
+{
+  //Crie dois arrays de frutas e combine-os usando o operador spread.
+
+  const frutasDaRoça = ["banana", "goiaba", "manga", "pitaya"];
+  console.log(`${frutasDaRoça}`);
+
+  const frutasDaCidade = [...frutasDaRoça, "morango", "pera", "lotus"];
+  console.log(`${frutasDaCidade}`);
+
+  const novasFrutas = ["Jaca", "Lentilha", ...frutasDaRoça, "Pana"];
+  console.log(novasFrutas);
+}
 
 //Crie dois objetos: um com nome e outro com idade. Combine-os em um terceiro objeto usando spread.
 
