@@ -9,6 +9,7 @@ const pessoaPassaro = {
   
 };
 
+
 console.log(`Nome do pasarro é, ${pessoaPassaro.nome}`);
 
 const { nome, idade, horasTrabalhadas, power } = pessoaPassaro;
