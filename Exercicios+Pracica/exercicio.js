@@ -46,20 +46,47 @@
   const frutasDaRoça = ["banana", "goiaba", "manga", "pitaya"];
   console.log(`${frutasDaRoça}`);
 
-  const frutasDaCidade = [...frutasDaRoça, "morango", "pera", "lotus"];
+  const frutasDaCidade = ["morango", "pera", "lotus"];
   console.log(`${frutasDaCidade}`);
 
-  const novasFrutas = ["Jaca", "Lentilha", ...frutasDaRoça, "Pana"];
-  console.log(novasFrutas);
+  const todasAsFrutas = ["Jaca", ...frutasDaRoça, ...frutasDaRoça, "Pana"];
+  console.log(todasAsFrutas);
 }
 
-//Crie dois objetos: um com nome e outro com idade. Combine-os em um terceiro objeto usando spread.
+{
+  //Crie dois objetos: um com nome e outro com idade. Combine-os em um terceiro objeto usando spread.
+  const pessoa = {
+    nome: "Artur",
+  };
+  const cidades = {
+    rg: "Minas Gerais",
+  };
+  const tudo = { ...pessoa, ...cidades };
+  console.log(tudo);
+}
 
-//Crie uma função que recebe um nome e imprime "Olá, [nome]".
-// Se o nome não for passado, use "visitante" como valor padrão
+{
+  //Crie uma função que recebe um nome e imprime "Olá, [nome]".
+  // Se o nome não for passado, use "visitante" como valor padrão
+  function funcao(nome) {
+    if ((nome = "Artur")) {
+      console.log("Olá", nome);
+    } else {
+      console.log("Olá visitante");
+    }
+  }
+  funcao();
+}
 
-//Crie uma variável com a data atual e exiba o dia, mês e ano formatados.
-
+{
+  //Crie uma variável com a data atual e exiba o dia, mês e ano formatados.
+  const dataEHora = new Date();
+  console.log(
+    dataEHora.getDate(),
+    dataEHora.getMonth(),
+    dataEHora.getFullYear(),
+  );
+}
 //Crie uma função simples chamada somar(a, b) e exporte-a como módulo
 // (modo CommonJS ou ES Modules, dependendo do ambiente).
 
