@@ -87,11 +87,38 @@
     dataEHora.getFullYear(),
   );
 }
+
 //Crie uma função simples chamada somar(a, b) e exporte-a como módulo
 // (modo CommonJS ou ES Modules, dependendo do ambiente).
+export function somar(a, b, c) {
+  return a + (b % c);
+}
+console.log(somar(29, 27, 5));
+{
+  //Crie uma função construtora chamada Livro que receba titulo e autor como parâmetros e os
+  // armazene em propriedades do objeto. Em seguida, crie dois objetos Livro usando essa função.
+  // Iniciar o nome da funcao em MAIUSCULO e o uso do this.
+  function Livros(livro, autor) {
+    this.livro = livro;
+    this.autor = autor;
+  }
+  const livro1 = new Livros("One Piece", "Eithiro Oda");
+  const livro2 = new Livros("Hunter_X_Hunter", "Sei não");
+  console.log(livro1);
+  console.log(livro1);
+}
 
-//Crie uma função construtora chamada Livro que receba titulo e autor como parâmetros e os
-// armazene em propriedades do objeto. Em seguida, crie dois objetos Livro usando essa função.
+{
+  //Adicione à função construtora Livro uma função chamada descrever,
+  // que retorna uma frase com o título e o autor do livro, usando concatenação de strings.
+  function Livro(titulo, autor) {
+    this.titulo = titulo;
+    this.autor = autor;
+    this.descrever = function () {
+      return "O livro " + this.titulo + " foi escrito por " + this.autor + ".";
+    };
+  }
 
-//Adicione à função construtora Livro uma função chamada descrever,
-// que retorna uma frase com o título e o autor do livro, usando concatenação de strings.
+  const livro = new Livro("O Hobbit", "J. R. R. Tolkien");
+  console.log(livro.descrever());
+}
